@@ -123,22 +123,16 @@ public class Main {
 		    }
 		    //calculate max circuit size
 		    max = jugglers.size()/circuits.size();
-		    
+
 		    //GATHERING DATA FINISHED NOW PROCESSING BEGINS
-		    
-				try {
-					bestMatches();
-				} catch (SuspendableException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+			bestMatches();
 		    assignJuggler();
 		    assignNoPreferenceJugglers();
 		    printResults();
 		}
 	}
 	
-	public static void bestMatches() throws SuspendableException
+	public static void bestMatches()
 	{	
 			for (int i = 0; i < jugglers.size();i++)
 			{
